@@ -19,6 +19,7 @@ class Model:
         self.loadEvents(nerc)
         eventi = self._listEvents
         self._solBest = []
+        self._totalHours = 0
         self._clientiMaxBest = 0 # perchè quando richiamo questo metodo per altro nerc e Y,H -> devo azzerare tutti i valori precedenti!!
         self._ricorsione([], maxY, maxH, 0, eventi)
 
